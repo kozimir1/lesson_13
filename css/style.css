@@ -109,8 +109,6 @@
 	animation: acceleratorFog 1.5s ease-out forwards;
 }
 @keyframes acceleratorFog {
-	0% {
-	}
 	50% {
 		opacity: 1;
 		transform: scale(1);
@@ -152,12 +150,8 @@
 	animation: acceleration 1s linear;
 }
 @keyframes acceleration {
-	0% {
-	}
 	50% {
 		transform: rotate(-0.5deg);
-	}
-	100% {
 	}
 }
 
@@ -1415,8 +1409,6 @@
 	animation: down-position 1s linear, rotation 1s linear 0.2s, rotation 0.2s linear 1.2s infinite;
 }
 @keyframes down-position {
-	0% {
-	}
 	50% {
 		top: 139px;
 		left: 495px;
