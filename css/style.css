@@ -10,7 +10,7 @@
 	/* max-width: 1024px; */
 	/* border: 1px solid red; */
 	padding: 120px 0px 0px 0px;
-	background: url("../img/1.png") 0 0/1440px repeat,
+	background: url("../img/1.png") 0 0 repeat,
 		linear-gradient(0deg, rgba(12, 107, 235, 1) 0%, rgba(154, 217, 250, 0.5049370089832808) 100%);
 	animation: backgroundMove 4s ease-out, jump 2s 3s;
 }
@@ -19,7 +19,7 @@
 		background-position: 0 0;
 	}
 	100% {
-		background-position: -100% 0;
+		background-position: 100% 0;
 	}
 }
 @keyframes jump {
@@ -88,7 +88,6 @@
 	display: block;
 	margin: -52px 0px 0px 40px;
 	position: relative;
-	top: ;
 }
 @keyframes openGate {
 	50% {
@@ -134,16 +133,8 @@
 	animation: carMoving 3.5s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards;
 }
 @keyframes carMoving {
-	0 {
-	}
-	75% {
-		transform: scale(0.7);
-	}
-	86% {
-		/* transform: scaleX(0.7); */
-	}
-	88% {
-		/* transform: scaleX(2); */
+	0% {
+		left: 1%;
 	}
 	100% {
 		left: 107%;
@@ -981,7 +972,6 @@
 	position: absolute;
 	left: 0;
 	top: 25px;
-	border-top: ;
 	background-color: #bdbec0;
 	/* border-bottom: 4px solid black; */
 	border-right: 4px solid black;
